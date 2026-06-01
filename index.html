@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sidhant R. Nair — Privacy-preserving ML</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<meta name="description" content="Sid Nair — privacy-preserving machine learning: differential privacy, federated optimization and secure AI. Incoming MS in Privacy Engineering at Carnegie Mellon.">
+<meta name="author" content="Sidhant R. Nair">
+<meta name="theme-color" content="#0d0f10">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Sid Nair — Privacy-preserving ML">
+<meta property="og:description" content="Differential privacy, federated optimization and secure AI. Incoming MS in Privacy Engineering at Carnegie Mellon.">
+<meta property="og:image" content="assets/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Sid Nair — Privacy-preserving ML">
+<meta name="twitter:description" content="Differential privacy, federated optimization and secure AI. Incoming MS in Privacy Engineering at Carnegie Mellon.">
+<meta name="twitter:image" content="assets/og-image.png">
+<link rel="stylesheet" href="assets/site.css">
+<script src="assets/theme.js"></script>
+<style>
+  /* home-only hero console */
+  header.hero{padding:60px 0 40px}
+  .console{border:1px solid var(--line);background:linear-gradient(180deg,var(--panel),var(--panel-deep));border-radius:var(--rad);overflow:hidden}
+  .console .chrome{display:flex;align-items:center;gap:8px;padding:11px 16px;border-bottom:1px solid var(--line);background:var(--panel2)}
+  .console .chrome .lights{display:flex;gap:6px}
+  .console .chrome .lights i{width:10px;height:10px;border-radius:50%;display:block;background:#2c3338}
+  .console .chrome .path{font-family:"IBM Plex Mono",monospace;font-size:11.5px;color:var(--faint);margin-left:8px}
+  .console .body{display:grid;grid-template-columns:1.5fr 1fr;gap:0}
+  .console .main,.console .side{min-width:0}
+  .console .main{padding:40px 40px 44px}
+  .prompt{font-family:"IBM Plex Mono",monospace;font-size:13px;color:var(--accent);margin-bottom:20px}
+  .prompt::before{content:"~ $ ";color:var(--faint)}
+  h1{font-size:clamp(40px,6.4vw,72px);font-weight:600;letter-spacing:-.025em;line-height:1.0;margin-bottom:18px}
+  h1 .cursor{display:inline-block;width:.5ch;height:.9em;background:var(--accent);margin-left:6px;vertical-align:-2px;animation:blink 1.1s steps(1) infinite}
+  @keyframes blink{50%{opacity:0}}
+  .tagline{font-family:"IBM Plex Mono",monospace;font-size:12.5px;color:var(--accent);margin-bottom:22px}
+  .lede{font-size:17px;color:#c4cac6;max-width:48ch;margin-bottom:30px}
+  .lede b{color:var(--ink);font-weight:600}
+  .console .side{border-left:1px solid var(--line);background:var(--inset);padding:28px 30px;display:flex;flex-direction:column}
+  .kv{display:flex;justify-content:space-between;gap:14px;padding:11px 0;border-bottom:1px dashed var(--line);font-family:"IBM Plex Mono",monospace;font-size:12.5px}
+  .kv:last-child{border-bottom:0}
+  .kv .k{color:var(--faint);white-space:nowrap}
+  .kv .val{color:var(--ink);text-align:right;min-width:0;overflow-wrap:anywhere}
+  .seemore{display:flex;justify-content:flex-end;margin-top:16px}
+  .seemore a{font-family:"IBM Plex Mono",monospace;font-size:12px;color:var(--muted)}
+  .seemore a:hover{color:var(--accent)}
+  @media(max-width:880px){
+    .console .body{grid-template-columns:1fr}
+    .console .side{border-left:0;border-top:1px solid var(--line)}
+  }
+</style>
+</head>
+<body>
+
+<div class="bar">
+  <div class="wrap">
+    <div class="left"><span class="dot"></span><span class="mono who"><b>sid0nair</b>@research</span><span class="mono status">— incoming MS Privacy Eng. @ CMU</span></div>
+    <nav>
+      <a href="index.html" class="active">home</a>
+      <a href="research.html">research</a>
+      <a href="projects.html">projects</a>
+      <a href="cv.html">cv</a>
+    </nav>
+  </div>
+</div>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="console">
+      <div class="chrome">
+        <div class="lights"><i></i><i></i><i></i></div>
+        <span class="path">~/sidhant-nair/profile.md</span>
+      </div>
+      <div class="body">
+        <div class="main">
+          <div class="prompt" data-type="whoami">whoami</div>
+          <h1>Sid Nair<span class="cursor"></span></h1>
+          <div class="tagline">// teaching models to learn from data they never see</div>
+          <p class="lede">I work on privacy-preserving machine learning: <b>differential privacy</b>, <b>federated optimization</b>, and methods that keep models useful while protecting the data they train on. This fall I start an MS in Privacy Engineering at <b>Carnegie Mellon</b>.</p>
+          <div class="runlinks">
+            <a href="https://github.com/sid0nair" target="_blank">→ github</a>
+            <a href="https://scholar.google.com/citations?user=xs57uAkAAAAJ&hl=en" target="_blank">→ scholar</a>
+            <a href="https://www.linkedin.com/in/sid0nair/" target="_blank">→ linkedin</a>
+            <a href="https://orcid.org/0009-0009-7380-3553" target="_blank">→ orcid</a>
+            <a href="mailto:sid.nairiitd@gmail.com">→ email</a>
+          </div>
+        </div>
+        <div class="side">
+          <div class="kv"><span class="k">focus</span><span class="val accent">DP + Federated ML</span></div>
+          <div class="kv"><span class="k">next</span><span class="val">MS · Carnegie Mellon University</span></div>
+          <div class="kv"><span class="k">prior</span><span class="val">B.Tech · Indian Institute of Technology Delhi</span></div>
+          <div class="kv"><span class="k">location</span><span class="val">New Delhi, India</span></div>
+          <div class="kv"><span class="k">papers</span><span class="val">4 under review</span></div>
+          <div class="seemore"><a href="cv.html">full cv →</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section id="recognition">
+  <div class="wrap">
+    <div class="sh"><span class="idx">01</span><h2>Recognition</h2><span class="grow"></span></div>
+    <div class="stats">
+      <div class="stat"><div class="v">KVPY ×2</div><div class="l">Research Fellowship, IISc — SA &amp; SX streams</div></div>
+      <div class="stat"><div class="v">top 3%</div><div class="l">Amazon ML Summer School '24 — 85,000+ applicants</div></div>
+      <div class="stat"><div class="v">top 4%</div><div class="l">Summer Undergrad Research Award — 1200+ peers</div></div>
+      <div class="stat"><div class="v">top 0.1%</div><div class="l">JEE Mains &amp; Advanced percentile</div></div>
+    </div>
+  </div>
+</section>
+
+<section id="research">
+  <div class="wrap">
+    <div class="sh"><span class="idx">02</span><h2>Selected Publications</h2><span class="grow"></span><a class="count" href="research.html" style="color:var(--muted)">all 4 →</a></div>
+    <a class="pub" href="https://arxiv.org/abs/2505.23588" target="_blank">
+      <span class="tag rev">under review</span>
+      <h3>Accelerated Training of Federated Learning via Second-Order Methods<small>IEEE T-PAMI</small></h3>
+      <span class="ax">arXiv:2505.23588</span>
+    </a>
+    <a class="pub" href="https://arxiv.org/abs/2601.09166" target="_blank">
+      <span class="tag">target TMLR '26</span>
+      <h3>DP-FedSOFIM: DP Federated Stochastic Optimization using Regularized FIM<small>TMLR</small></h3>
+      <span class="ax">arXiv:2601.09166</span>
+    </a>
+    <a class="pub" href="https://doi.org/10.1115/IMECE-INDIA2025-160285" target="_blank">
+      <span class="tag">published</span>
+      <h3>Towards Support-Free Printing in Extrusion-Based Additive Manufacturing<small>ASME IMECE 2025</small></h3>
+      <span class="ax">IMECE-160285</span>
+    </a>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="wrap">
+    <div class="sh"><span class="idx">03</span><h2>Selected Projects</h2><span class="grow"></span><a class="count" href="projects.html" style="color:var(--muted)">all projects →</a></div>
+    <div class="grid">
+      <a class="card" href="https://github.com/sid0nair/DP-FedSOFIM_V2" target="_blank">
+        <div class="ch"><h3>DP-FedSOFIM</h3><span class="gh">↗</span></div>
+        <p>Differentially private second-order federated optimization with regularized Fisher information and Rényi-DP accounting.</p>
+        <div class="metric">8× noise reduction · 70% acc.</div>
+        <div class="tags"><span>PyTorch</span><span>Opacus</span><span>Rényi-DP</span></div>
+      </a>
+      <a class="card" href="https://github.com/sid0nair/parametric-cad-generator" target="_blank">
+        <div class="ch"><h3>Parametric CAD Gen</h3><span class="gh">↗</span></div>
+        <p>NL → JSON → Fusion 360 Python via RAG + LLM (Qwen 2.5). Built at Philips R&amp;I.</p>
+        <div class="metric">−60% manual drafting</div>
+        <div class="tags"><span>LangChain</span><span>ChromaDB</span><span>Ollama</span></div>
+      </a>
+      <a class="card" href="https://github.com/sid0nair/fMRI-Image-Reconstruction" target="_blank">
+        <div class="ch"><h3>fMRI Reconstruction</h3><span class="gh">↗</span></div>
+        <p>VAE-GAN decoder reconstructing visual stimuli from fMRI BOLD signals, with FSL preprocessing.</p>
+        <div class="metric">0.73 SSIM</div>
+        <div class="tags"><span>VAE-GAN</span><span>fMRI/FSL</span></div>
+      </a>
+      <a class="card" href="https://github.com/sid0nair/Parameterized-MDPs" target="_blank">
+        <div class="ch"><h3>Parameterized RL</h3><span class="gh">↗</span></div>
+        <p>Policy-gradient actor-critic with max-entropy deterministic annealing over continuous action spaces.</p>
+        <div class="metric">B.Tech thesis</div>
+        <div class="tags"><span>RL</span><span>Actor-Critic</span></div>
+      </a>
+      <a class="card" href="https://github.com/sid0nair/WhiteRose_CV_FraudDetection" target="_blank">
+        <div class="ch"><h3>CV Fraud Detection</h3><span class="gh">↗</span></div>
+        <p>Risk-scoring via BERT embeddings, TF-IDF and autoencoder residuals to flag resume inconsistencies.</p>
+        <div class="metric">~65% recall</div>
+        <div class="tags"><span>BERT</span><span>NLP</span></div>
+      </a>
+      <a class="card" href="https://github.com/sid0nair/MATLAB_Axlr8r" target="_blank">
+        <div class="ch"><h3>MATLAB Axlr8r</h3><span class="gh">↗</span></div>
+        <p>Formula-Student vehicle simulation — suspension A-arm forces &amp; bolt safety factors across dynamic events.</p>
+        <div class="metric">MATLAB · dynamics</div>
+        <div class="tags"><span>MATLAB</span><span>Simulation</span></div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section id="experience">
+  <div class="wrap">
+    <div class="sh"><span class="idx">04</span><h2>Research &amp; Work</h2><span class="grow"></span><a class="count" href="research.html" style="color:var(--muted)">details →</a></div>
+    <div class="exp">
+      <div class="erow">
+        <div class="org">ISI Kolkata<small>Prof. Tanmay Sen</small></div>
+        <div class="desc">DP second-order optimization in FL — momentum-corrected Newton steps, federated privacy accountant; 8× noise reduction.</div>
+        <div class="when">Jun '25 — now</div>
+      </div>
+      <div class="erow">
+        <div class="org">IIT Hyderabad<small>Prof. C. Mohan</small></div>
+        <div class="desc">Accelerated FL via second-order methods — Newton-CG / L-BFGS benchmarks, −40% communication overhead.</div>
+        <div class="when">Oct '24 — Apr '25</div>
+      </div>
+      <div class="erow">
+        <div class="org">Philips India<small>HIC Pune · R&amp;I</small></div>
+        <div class="desc">AI-driven CAD pipeline — SQL-backed ChromaDB retrieval, Qwen 2.5 Coder on Ollama → Autodesk Python APIs.</div>
+        <div class="when">May '25 — Jul '25</div>
+      </div>
+      <div class="erow">
+        <div class="org">SONY Corp. (SSUP)<small>Mech. Eng., IIT Delhi</small></div>
+        <div class="desc">Native slicing &amp; G-code for India's first 5-axis FDM printer; CNN/ViT extrusion anomaly detection.</div>
+        <div class="when">Apr '24 — Oct '24</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site" id="contact">
+  <div class="wrap">
+    <div class="fcon">
+      <div class="big">Incoming MS Privacy Eng. @ CMU<span class="sub">Open to research collaborations & conversations</span></div>
+      <div class="meta"><a href="mailto:sid.nairiitd@gmail.com">sid.nairiitd@gmail.com</a><br>+91 98102 50312<br>© 2026 · New Delhi, IN</div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

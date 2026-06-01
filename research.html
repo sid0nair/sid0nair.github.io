@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Research — Sidhant R. Nair</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<meta name="description" content="Research by Sid Nair — second-order federated optimization with differential-privacy guarantees. Publications under review at IEEE T-PAMI and TMLR.">
+<meta name="author" content="Sidhant R. Nair">
+<meta name="theme-color" content="#0d0f10">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Research — Sid Nair">
+<meta property="og:description" content="Second-order federated optimization with differential-privacy guarantees. Work under review at IEEE T-PAMI and TMLR.">
+<meta property="og:image" content="assets/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Research — Sid Nair">
+<meta name="twitter:description" content="Second-order federated optimization with differential-privacy guarantees. Work under review at IEEE T-PAMI and TMLR.">
+<meta name="twitter:image" content="assets/og-image.png">
+<link rel="stylesheet" href="assets/site.css">
+<script src="assets/theme.js"></script>
+</head>
+<body>
+
+<div class="bar">
+  <div class="wrap">
+    <div class="left"><span class="dot"></span><span class="mono who"><b>sid0nair</b>@research</span><span class="mono status">— incoming MS Privacy Eng. @ CMU</span></div>
+    <nav>
+      <a href="index.html">home</a>
+      <a href="research.html" class="active">research</a>
+      <a href="projects.html">projects</a>
+      <a href="cv.html">cv</a>
+    </nav>
+  </div>
+</div>
+
+<div class="phead">
+  <div class="wrap">
+    <div class="crumb">~/ <b>research</b></div>
+    <h1>Research</h1>
+    <p>My work centers on <b>second-order federated optimization with differential-privacy guarantees</b>, making distributed training converge faster while keeping formal privacy budgets tight. In plain terms, I'm building ways for institutions like hospitals, banks and data centres to train shared AI models together without ever handing over the private data behind them, so that as machine learning scales, personal privacy doesn't have to be the price. Below: peer-reviewed work and preprints, then the research appointments behind them.</p>
+  </div>
+</div>
+
+<section id="focus">
+  <div class="wrap">
+    <div class="sh"><span class="idx">01</span><h2>Focus Areas</h2><span class="grow"></span></div>
+    <div class="stats">
+      <div class="stat"><div class="v">DP</div><div class="l">Differential privacy — Rényi-DP accounting, subsampling amplification, (ε,δ) guarantees</div></div>
+      <div class="stat"><div class="v">FL</div><div class="l">Federated learning over non-IID, heterogeneous clients</div></div>
+      <div class="stat"><div class="v">2nd-order</div><div class="l">Newton-CG, L-BFGS, Fisher-information &amp; low-rank curvature</div></div>
+      <div class="stat"><div class="v">Secure AI</div><div class="l">Privacy-preserving deployment &amp; domain adaptation</div></div>
+    </div>
+  </div>
+</section>
+
+<section id="publications">
+  <div class="wrap">
+    <div class="sh"><span class="idx">02</span><h2>Publications &amp; Preprints</h2><span class="grow"></span><span class="count">04</span></div>
+
+    <div class="pubd">
+      <div class="meta"><span class="tag rev">Under review</span><span class="date">Apr 2025</span></div>
+      <h3>Accelerated Training of Federated Learning via Second-Order Methods</h3>
+      <div class="venue">Under review at <b>IEEE Transactions on Pattern Analysis and Machine Intelligence (T-PAMI)</b></div>
+      <p>Co-authored work detailing the convergence behaviour and communication efficiency of second-order federated-learning methods — benchmarking Newton-CG, L-BFGS and quasi-Newton schemes against first-order baselines on heterogeneous clients, with Hessian-free and low-rank approximations to cut communication overhead.</p>
+      <div class="foot"><a class="btn" href="https://arxiv.org/abs/2505.23588" target="_blank">arXiv:2505.23588 ↗</a></div>
+    </div>
+
+    <div class="pubd">
+      <div class="meta"><span class="tag">Target TMLR 2026</span><span class="date">Jan 2026</span></div>
+      <h3>DP-FedSOFIM: Differentially Private Federated Stochastic Optimization using Regularized Fisher Information Matrix</h3>
+      <div class="venue">Submitted to <b>Transactions on Machine Learning Research (TMLR)</b></div>
+      <p>Privacy-preserving second-order federated optimization with (ε−δ) differential-privacy guarantees for heterogeneous data distributions. A regularized Fisher Information Matrix preconditions updates while a federated privacy accountant tracks the budget under subsampling amplification.</p>
+      <div class="foot"><a class="btn" href="https://arxiv.org/abs/2601.09166" target="_blank">arXiv:2601.09166 ↗</a><a class="btn" href="https://github.com/sid0nair/DP-FedSOFIM_V2" target="_blank">code ↗</a></div>
+    </div>
+
+    <div class="pubd">
+      <div class="meta"><span class="tag rev">Under review</span><span class="date">Aug 2025</span></div>
+      <h3>FedDAF: Federated Domain Adaptation using Model Functional Distance</h3>
+      <div class="venue">Under review — <b>IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)</b></div>
+      <p>A novel federated domain-adaptation approach addressing limited target data and client distribution heterogeneity, introducing functional-distance-based aggregation that aligns target and source models via mean gradient fields — 15–20% accuracy gains over state-of-the-art FL, PFL and FDA methods on CIFAR-10, PACS and Caltech-10.</p>
+      <div class="foot"><a class="btn" href="https://arxiv.org/abs/2509.11819" target="_blank">arXiv:2509.11819 ↗</a></div>
+    </div>
+
+    <div class="pubd">
+      <div class="meta"><span class="tag">Published</span><span class="date">Mar 2025</span></div>
+      <h3>Towards Support-Free Printing in Extrusion-Based Additive Manufacturing: Path Planning &amp; Process Control</h3>
+      <div class="venue">Presented at <b>ASME International Mechanical Engineering Congress &amp; Exposition (IMECE) 2025</b></div>
+      <p>Optimized computational object slicing and multi-axis G-code design for support-free extrusion printing — part of an industry–university collaboration with SONY on India's first 5-axis FDM printer.</p>
+      <div class="foot"><a class="btn" href="https://doi.org/10.1115/IMECE-INDIA2025-160285" target="_blank">ASME · IMECE-160285 ↗</a></div>
+    </div>
+  </div>
+</section>
+
+<section id="appointments">
+  <div class="wrap">
+    <div class="sh"><span class="idx">03</span><h2>Research Appointments</h2><span class="grow"></span></div>
+
+    <div class="expd">
+      <div class="top"><div class="org">Indian Statistical Institute (ISI), Kolkata</div><div class="when">Jun 2025 — Present</div></div>
+      <div class="sub">Prof. Tanmay Sen · Statistical Quality Control &amp; OR Unit</div>
+      <ul>
+        <li>Designing <b>second-order federated optimizers with momentum-corrected Newton steps</b> for faster convergence.</li>
+        <li>Implementing a <b>federated privacy accountant</b> with Rényi-DP and subsampling amplification, ensuring (ε, δ)-DP.</li>
+        <li>Building a dimension-aware <b>gradient-clipping framework</b> for ResNet, stabilizing updates under noisy Hessians.</li>
+        <li>Achieved <b>8× noise reduction</b> via subsampling — 70% accuracy, outperforming first-order baselines.</li>
+      </ul>
+    </div>
+
+    <div class="expd">
+      <div class="top"><div class="org">Indian Institute of Technology (IIT), Hyderabad</div><div class="when">Oct 2024 — Apr 2025</div></div>
+      <div class="sub">Prof. C. Mohan · Dept. of CSE (Former Dean, Public &amp; Corporate Relations)</div>
+      <ul>
+        <li>Benchmarked convergence of <b>Newton-CG, L-BFGS and quasi-Newton</b> methods on heterogeneous federated clients.</li>
+        <li>Implemented Hessian-free and low-rank approximation schemes, <b>reducing communication overhead by 40%+</b>.</li>
+        <li>Tested diagonal and Nyström-based second-order updates for scalability in large-scale distributed optimization.</li>
+        <li>Developed preconditioning strategies for distributed second-order optimization under non-IID heterogeneity.</li>
+      </ul>
+    </div>
+
+    <div class="expd">
+      <div class="top"><div class="org">Policy-Gradient Methods in Parameterized RL</div><div class="when">Aug 2025 — Present</div></div>
+      <div class="sub">B.Tech Project · Prof. Amber Srivastava, Mech. Eng., IIT Delhi</div>
+      <ul>
+        <li>Extending the parameterized-MDP framework to <b>continuous action spaces</b> via policy-gradient methods vs. Q-learning.</li>
+        <li>Implementing the <b>maximum-entropy principle with deterministic annealing</b> in an actor-critic architecture for exploration control.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="fcon">
+      <div class="big">Interested in the federated-DP work?<span class="sub">Happy to share drafts, code and results</span></div>
+      <div class="meta"><a href="mailto:sid.nairiitd@gmail.com">sid.nairiitd@gmail.com</a><br><a href="https://scholar.google.com/citations?user=xs57uAkAAAAJ&hl=en" target="_blank">Google Scholar ↗</a><br>© 2026 · New Delhi, IN</div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

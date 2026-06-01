@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Projects — Sidhant R. Nair</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<meta name="description" content="Projects by Sid Nair — privacy & federated ML, applied machine learning, and engineering systems. Code on GitHub.">
+<meta name="author" content="Sidhant R. Nair">
+<meta name="theme-color" content="#0d0f10">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Projects — Sid Nair">
+<meta property="og:description" content="Privacy & federated ML, applied machine learning, and engineering systems. Code on GitHub.">
+<meta property="og:image" content="assets/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Projects — Sid Nair">
+<meta name="twitter:description" content="Privacy & federated ML, applied machine learning, and engineering systems. Code on GitHub.">
+<meta name="twitter:image" content="assets/og-image.png">
+<link rel="stylesheet" href="assets/site.css">
+<script src="assets/theme.js"></script>
+</head>
+<body>
+
+<div class="bar">
+  <div class="wrap">
+    <div class="left"><span class="dot"></span><span class="mono who"><b>sid0nair</b>@research</span><span class="mono status">— incoming MS Privacy Eng. @ CMU</span></div>
+    <nav>
+      <a href="index.html">home</a>
+      <a href="research.html">research</a>
+      <a href="projects.html" class="active">projects</a>
+      <a href="cv.html">cv</a>
+    </nav>
+  </div>
+</div>
+
+<div class="phead">
+  <div class="wrap">
+    <div class="crumb">~/ <b>projects</b></div>
+    <h1>Projects</h1>
+    <p>Selected work across <b>privacy-preserving &amp; federated ML</b>, applied machine learning, and engineering systems. Each card links to its repository on GitHub.</p>
+    <div class="runlinks" style="margin-top:22px"><a href="https://github.com/sid0nair" target="_blank">→ all repositories on github</a></div>
+  </div>
+</div>
+
+<section style="padding-top:20px">
+  <div class="wrap">
+
+    <div class="grouplabel"><span class="gi">01</span><h3>Privacy &amp; Federated ML</h3><span class="grow"></span><span class="gc">02</span></div>
+    <div class="grid two">
+      <a class="card" href="https://github.com/sid0nair/DP-FedSOFIM_V2" target="_blank">
+        <div class="ch"><h3>DP-FedSOFIM</h3><span class="gh">↗ DP-FedSOFIM_V2</span></div>
+        <p>Differentially private second-order federated optimization using a regularized Fisher Information Matrix, with a federated privacy accountant (Rényi-DP, subsampling amplification) and dimension-aware gradient clipping. Official implementation of the TMLR submission.</p>
+        <div class="metric">8× noise reduction · 70% accuracy · (ε,δ)-DP</div>
+        <div class="tags"><span>PyTorch</span><span>Opacus</span><span>Rényi-DP</span><span>Newton</span></div>
+      </a>
+      <a class="card" href="https://arxiv.org/abs/2509.11819" target="_blank">
+        <div class="ch"><h3>FedDAF — Federated Domain Adaptation</h3><span class="gh">↗ arXiv</span></div>
+        <p>Federated domain-adaptation framework tackling domain shift and limited target data via functional-distance-based aggregation, aligning source/target models through mean gradient fields.</p>
+        <div class="metric">+15–20% over SOTA · CIFAR-10 / PACS / Caltech-10</div>
+        <div class="tags"><span>FL</span><span>Domain Adaptation</span><span>PyTorch</span></div>
+      </a>
+    </div>
+
+    <div class="grouplabel"><span class="gi">02</span><h3>Applied Machine Learning</h3><span class="grow"></span><span class="gc">04</span></div>
+    <div class="grid">
+      <a class="card" href="https://github.com/sid0nair/fMRI-Image-Reconstruction" target="_blank">
+        <div class="ch"><h3>fMRI Image Reconstruction</h3><span class="gh">↗</span></div>
+        <p>VAE-GAN decoder reconstructing visual stimuli from fMRI BOLD signals; FSL preprocessing (motion correction, GLM), ridge-regression voxel encoding and PCA/ICA dimensionality reduction.</p>
+        <div class="metric">0.73 SSIM · −25% latency</div>
+        <div class="tags"><span>VAE-GAN</span><span>fMRI/FSL</span><span>Ridge</span></div>
+      </a>
+      <a class="card" href="https://github.com/sid0nair/Parameterized-MDPs" target="_blank">
+        <div class="ch"><h3>Parameterized RL</h3><span class="gh">↗</span></div>
+        <p>Policy-gradient actor-critic over continuous parameterized action spaces, with the maximum-entropy principle and deterministic annealing for exploration control. B.Tech thesis.</p>
+        <div class="metric">Actor-Critic · max-entropy</div>
+        <div class="tags"><span>RL</span><span>Policy Gradient</span></div>
+      </a>
+      <a class="card" href="https://github.com/sid0nair/WhiteRose_CV_FraudDetection" target="_blank">
+        <div class="ch"><h3>CV Fraud Detection</h3><span class="gh">↗</span></div>
+        <p>Risk-scoring system using autoencoder residuals and reciprocity analysis with a hybrid NLP pipeline — BERT embeddings, TF-IDF and sequencing — to flag resume inconsistencies. Eightfold.AI Hackathon.</p>
+        <div class="metric">~65% recall</div>
+        <div class="tags"><span>BERT</span><span>TF-IDF</span><span>Autoencoder</span></div>
+      </a>
+      <a class="card" href="https://github.com/sid0nair/Cryptographic-Algorithm-Identification" target="_blank">
+        <div class="ch"><h3>Cryptographic Algorithm ID</h3><span class="gh">↗</span></div>
+        <p>Identifying cryptographic algorithms from ciphertext using ML — feature extraction via NIST randomness tests and ensemble learning (Random Forest, Logistic Regression).</p>
+        <div class="metric">NIST tests · ensemble</div>
+        <div class="tags"><span>scikit-learn</span><span>Random Forest</span></div>
+      </a>
+    </div>
+
+    <div class="grouplabel"><span class="gi">03</span><h3>Engineering Systems &amp; CAD</h3><span class="grow"></span><span class="gc">03</span></div>
+    <div class="grid">
+      <a class="card" href="https://github.com/sid0nair/parametric-cad-generator" target="_blank">
+        <div class="ch"><h3>Parametric CAD Generator</h3><span class="gh">↗</span></div>
+        <p>Natural language → structured JSON → Fusion 360 Python via RAG + LLM. SQL-backed ChromaDB retrieval with Qwen 2.5 Coder (7B) on Ollama. Built during the Philips R&amp;I internship.</p>
+        <div class="metric">−60% manual drafting</div>
+        <div class="tags"><span>LangChain</span><span>ChromaDB</span><span>Ollama</span></div>
+      </a>
+      <a class="card" href="https://github.com/sid0nair/5Axis-Gcode-Generator" target="_blank">
+        <div class="ch"><h3>5-Axis G-code Generator</h3><span class="gh">↗</span></div>
+        <p>Native slicing and multi-axis G-code generation for an in-house 5-axis Ender (FANUC format) — built during the SONY SSUP internship for India's first 5-axis FDM printer.</p>
+        <div class="metric">5-axis · Blender / Rhino3D</div>
+        <div class="tags"><span>G-code</span><span>PyDy</span><span>Blender</span></div>
+      </a>
+      <a class="card" href="https://github.com/sid0nair/MATLAB_Axlr8r" target="_blank">
+        <div class="ch"><h3>MATLAB Axlr8r</h3><span class="gh">↗</span></div>
+        <p>Formula-Student vehicle simulation — suspension A-arm force analysis and bolt safety-factor computation across dynamic events (acceleration, skidpad, braking).</p>
+        <div class="metric">MATLAB · vehicle dynamics</div>
+        <div class="tags"><span>MATLAB</span><span>Simulation</span></div>
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="fcon">
+      <div class="big">More on GitHub<span class="sub">14 public repositories &amp; counting</span></div>
+      <div class="meta"><a href="https://github.com/sid0nair" target="_blank">github.com/sid0nair ↗</a><br><a href="mailto:sid.nairiitd@gmail.com">sid.nairiitd@gmail.com</a><br>© 2026 · New Delhi, IN</div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
