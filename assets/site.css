@@ -90,7 +90,12 @@ section{padding:46px 0}
 .pub .tag.rev{background:rgba(255,255,255,.05);color:var(--muted)}
 .pub h3{font-size:16px;font-weight:500;letter-spacing:-.01em;line-height:1.3}
 .pub h3 small{display:block;color:var(--muted);font-family:"IBM Plex Mono",monospace;font-size:11.5px;font-weight:400;margin-top:5px}
+.pub h3 a{color:inherit;text-decoration:none}
+.pub h3 a:hover{color:var(--accent)}
 .pub .ax{font-family:"IBM Plex Mono",monospace;font-size:11.5px;color:var(--faint);white-space:nowrap}
+.pub .ax a{color:inherit;text-decoration:underline}
+.pub .ax a:hover{color:var(--accent)}
+div.pub{cursor:default}
 .pub:hover .ax{color:var(--accent)}
 
 /* detailed publication (research page) */
